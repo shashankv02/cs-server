@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       - PORT=27015
-      - MAP=de_dust2
+      - MAP=aim_hunt3
       - MAXPLAYERS=16
       - SV_LAN=0
     ports:
@@ -19,3 +19,4 @@ services:
       - /home/ubuntu/steam/listip.cfg:/hlds/cstrike/listip.cfg
       - /home/ubuntu/steam/server.cfg:/hlds/cstrike/server.cfg
       - /home/ubuntu/steam/mapcycle.txt:/hlds/cstrike/mapcycle.txt
+      - /home/ubuntu/steam/maps:/hlds/cstrike/maps
